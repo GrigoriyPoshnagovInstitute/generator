@@ -1,16 +1,23 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>LL Parser</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-<main id="app">
-  <div id="table-container"></div>
-</main>
+<h1>LL Parser</h1>
+
+<label for="grammarInput">Правила грамматики:</label>
+<textarea id="grammarInput" placeholder="Введите правила грамматики"></textarea>
+
+<label for="testInput">Текст для проверки:</label>
+<textarea id="testInput" placeholder="Введите текст для проверки"></textarea>
+
+<button id="parseButton">Парсить</button>
+<pre id="output"></pre>
+
 <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
